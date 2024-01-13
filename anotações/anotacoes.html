@@ -30,6 +30,10 @@
 
 <a href="link"> Tag para links </a>
 
+align="" - Alinha o texto (pode ser center, right ou left).
+
+background="" - Você consegue definir uma cor de fundo e/ou uma imagem de fundo.  
+
 <img src="caminho/da.imagem ou o link da imagem"> Tag para adicionar uma imagem
 
 width="200" Largura de 200px
@@ -40,11 +44,11 @@ border="1" Borda de 1px
 
 <table> Tag de tabela </table>
 
-<tr> Tag da linha da tabela(linha) </tr>
+<tr> - Tag da linha da tabela(linha) 
 
-<th> Tag de cabeçalho da tabela(título) </th>
+<th> - Tag de cabeçalho da tabela(título) 
 
-<td> Tag de dados da tabela(coluna) </td> 
+<td> - Tag de dados da tabela(coluna)
 
 colspan="quantas colunas vai ocupar" Atributo para estender a coluna da tabela
 
@@ -52,34 +56,43 @@ rowspan="quantas linhas vai ocupar" Atributo para estender a linha da tabela
 
 <form> Tag de formulário </form>
 
-<input type="" name=""> Tag de componente de formulário
+<input type="" id="" name="" value=""> Tag de componente de formulário
 
-type="" - define o tipo do componente. Ele pode ser:
-	text - do tipo texto
+type="" - Define o tipo do componente. Ele pode ser:
 
-	password - do tipo senha, ela oculta a senha
+	text - Exibe um campo de entrada de texto de linha única
 
-	radio - são círculos que possibilita a marcação. Para impossibilitar que mais de um círculo seje marcado, devemos colocar o mesmo name="nome".
+	password - Exibe um campo de senha, ela oculta a senha
 
-	checkbox - são quadradinhos onde pode-se marcar quantos o usuário quiser e pode ser usado por exemplo para colocar os interesses do usuário.
+	radio - Exibe um botão de opção (para selecionar uma das muitas opções). Para impossibilitar que mais de um círculo seje marcado, devemos colocar o mesmo name="nome".
 
-	button - do tipo botão
+	checkbox - Exibe uma caixa de seleção (para selecionar zero ou mais dentre muitas opções)
 
-	submit - envia o formulário 
+	button - Exibe um botão clicável
 
-value="" - carrega o valor(texto) que aparecerá no botão
+	submit - Exibe um botão enviar (para enviar o formulário)
 
-name="" - define uma forma de resgatar/recuperar os dados digitados pelo usuário usando uma linguagem de programação. (Utilizamos o name para passar os dados para uma próxima tela e nessa próxima tela conseguiriamos fazer o processamento utilizando a linguagem de programação)
+id="" - Define um id, serve para identificar(deve ser igual ao for="" da <label>)
 
-align="" - Alinha o texto (pode ser center, right ou left).
+name="" - Define uma forma de resgatar/recuperar os dados digitados pelo usuário usando uma linguagem de programação. (Utilizamos o name para passar os dados para uma próxima tela e nessa próxima tela conseguiriamos fazer o processamento utilizando a linguagem de programação)
 
-background="" - Você consegue definir uma cor de fundo e/ou uma imagem de fundo.  
+placeholder="" - Define um texto que fica dentro da caixa de texto
 
-<select> Ela permite ao usuário escolher uma opção dentro de uma lista </select>
+value="" - Carrega o valor(texto) que aparecerá no botão(button)
 
-<option> São as opções que queremos que o usuário escolha </opcion>
+<label> É um elemento do tipo inline que define um rótulo para vários elementos do formulário.
 
-<textarea> Essa Tag abre uma caixa de texto </textarea>
+for="" - É um atributo da <label>(deve ser igual ao id="" do <input> para uni-los)
+
+<fieldset> - Agrupa dados semelhantes
+
+<legend> - Legenda para o agrupamento dos dados semelhantes
+
+<select> - Ela permite ao usuário escolher uma opção dentro de uma lista
+
+<option> - São as opções que queremos que o usuário escolha
+
+<textarea> - Essa Tag abre uma caixa de texto
 
 Entidades html - https://www.w3schools.com/html/html_entities.asp
 
