@@ -96,4 +96,213 @@ for="" - É um atributo da <label>(deve ser igual ao id="" do <input> para uni-l
 
 Entidades html - https://www.w3schools.com/html/html_entities.asp
 
+<header> - Tag de cabeçalho
+
+<nav> - Tag de navegação
+
+<footer> - Tag de rodapé
+
+<article> - Tag de postagem
+
+<section> - Tag de seção
+
+<time> - Tag de hora/data
+
+<aside> - Tag de área lateral
+
+---------------------------------------------------------------
+
+FORMULÁRIOS
+
+Formulários HTML são elementos que permitem aos usuários inserir dados e enviá-los para um servidor para processamento. Eles consistem em vários elementos, como caixas de texto, botões, caixas de seleção, botões de opção, entre outros. A tag principal para criar formulários é <form>, e dentro dela são colocados os diferentes elementos de entrada e controles.
+
+Aqui está uma descrição de alguns elementos-chave usados em formulários HTML:
+
+<form>: Define o início e o fim de um formulário. Todos os elementos do formulário devem ser colocados dentro dessa tag.
+
+	EX: <form action="/processar_formulario" method="post">
+
+		</form>
+
+	action: A URL para a qual os dados do formulário serão enviados quando enviados. Pode ser uma URL relativa ou absoluta. Se o action atributo for omitido, a ação será definida para a página atual.
+
+	method: Especifica o método HTTP usado para enviar os dados. Os dados do formulário podem ser enviados como variáveis ​​​​de URL (com method="get") ou como pós-transação HTTP (com method="post"). O método HTTP padrão ao enviar dados de formulário é GET. 
+
+	target: -  Especifica onde exibir a resposta recebida após o envio do formulário. O target pode ter um dos seguintes valores:
+		_blank - A resposta é exibida em uma nova janela ou guia
+		_self - A resposta é exibida na janela atual
+		_parent - A resposta é exibida no quadro pai
+		_top - A resposta é exibida em todo o corpo da janela
+		framename - A resposta é exibida em um iframe nomeado
+
+O elemento HTML <form> pode conter um ou mais dos seguintes elementos de formulário:
+
+<input>
+<label>
+<select>
+<textarea>
+<button>
+<fieldset>
+<legend>
+<datalist>
+<output>
+<option>
+<optgroup>
+
+<input>: É usado para criar diferentes tipos de campos de entrada, como caixas de texto, botões de rádio, caixas de seleção, etc.
+
+	EX: <input type="text" name="nome" />
+
+	type="" Define o tipo de entrada que será criado. Os tipos são:
+
+		text - Exibe um campo de entrada de texto de linha única
+
+		password - Exibe um campo de senha, ela oculta a senha
+
+		radio - Exibe um botão de opção (para selecionar uma das muitas opções). Para impossibilitar que mais de um círculo seje marcado, devemos colocar o mesmo name="nome".
+
+		checkbox - Exibe uma caixa de seleção (para selecionar zero ou mais dentre muitas opções)
+
+		button - Exibe um botão clicável
+
+		submit - Exibe um botão enviar (para enviar o formulário)
+
+		email - É usado para campos de entrada que devem conter um endereço de e-mail
+
+		reset - Define um botão de redefinição que redefinirá todos os valores do formulário para seus valores padrão
+
+		color - É usado para campos de entrada que devem conter uma cor
+
+		date - É usado para campos de entrada que devem conter uma data. Você também pode usar os atributos min e max para adicionar restrições às datas
+
+		time - O usuário seleciona um horário (sem fuso horário)
+
+		datetime-local - Um campo de entrada de data e hora, sem fuso horário
+
+		image - Define uma imagem como um botão de envio. O caminho para a imagem é especificado no atributo src
+
+		file - Define um campo de seleção de arquivo e um botão "Navegar" para uploads de arquivos.
+
+		hidden - um campo de entrada oculto (não visível para o usuário)
+
+		month - Permite ao usuário selecionar um mês e ano
+
+		week - Permite ao usuário selecionar uma semana e um ano.
+
+		number - Define um campo de entrada numérico
+
+		range - Um controle para inserir um número cujo valor exato não é importante (como um controle deslizante)
+
+		search - É usado para campos de pesquisa (um campo de pesquisa se comporta como um campo de texto normal)
+
+		tel - É usado para campos de entrada que devem conter um número de telefone
+
+		url - É usado para campos de entrada que devem conter um endereço URL
+
+		
+
+
+	name: Identifica o nome do campo quando os dados do formulário são enviados. Se o atributo name for omitido, o valor do campo de entrada não será enviado.
+
+	value="" - Especifica um valor inicial para um campo de entrada.
+
+	id="" - Define um id, serve para identificar.
+
+	row="" - Especifica o número visível de linhas em uma área de texto. O atributo row funciona com o tipo de entrada checkbox.
+
+	cols="" - Especifica a largura visível de uma área de texto. O atributo cols funciona com o tipo de entrada checkbox.
+
+	readon - Especifica que um campo de entrada é somente leitura.
+
+	disable - Especifica que um campo de entrada deve ser desabilitado.
+
+	size="" - Especifica a largura visível, em caracteres, de um campo de entrada. O valor padrão para o size é 20. O atributo size funciona com os seguintes tipos de entrada: text, search, tel, url, email e password.
+
+	maxlength="" - Especifica o número máximo de caracteres permitidos em um campo de entrada.
+
+	min="" e max="" - Especificam os valores mínimo e máximo para um campo de entrada. Os atributos min e max funcionam com os seguintes tipos de entrada:  number, range, date, datetime-local, month, time e week.
+
+	multiple - Especifica que o usuário pode inserir mais de um valor em um campo de entrada. O atributo multiple funciona com os seguintes tipos de entrada: email e file.
+
+	pattern="" - Especifica uma expressão regular com a qual o valor do campo de entrada é verificado quando o formulário é enviado. O atributo pattern funciona com os seguintes tipos de entrada: text, date, search, url, tel, email e password.
+
+	placeholder="" - Especifica uma dica curta que descreve o valor esperado de um campo de entrada (um valor de amostra ou uma breve descrição do formato esperado). O atributo required funciona com os seguintes tipos de entrada: text, search, url, tel, email, password, date pickers, number, checkbox, radio e file.
+
+	step="" - Especifica os intervalos numéricos legais para um campo de entrada. O atributo step funciona com os seguintes tipos de entrada: number, range, date, datetime-local, month, time e week.
+
+	autofocus - Especifica que um campo de entrada deve receber foco automaticamente quando a página for carregada.
+
+	height="" e width="" - Especificam a altura e a largura de um elemento <input type="image">.
+
+	autocomplete="" - Especifica se um formulário ou campo de entrada deve ter o preenchimento automático ativado ou desativado.
+
+	list="" - O atributo input refere-se a um <datalist>elemento que contém opções predefinidas para um elemento <input>.
+
+
+<label> - Define um rótulo para muitos elementos do formulário.
+
+	EX: <form>
+			<label for="nome">Nome:</label><br>			
+			<input type="text" id="nome" name="nome"><br>
+		</form>
+
+O atributo for da tag <label> deve ser igual ao atributo id do <input> elemento para uni-los.
+
+<select> - Define uma lista suspensa.
+
+	EX: <select id="cars" name="cars">
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat">Fiat</option>
+			<option value="audi">Audi</option>
+		</select>
+
+<option> - Define uma opção que pode ser selecionada. Por padrão, o primeiro item da lista suspensa é selecionado. Para definir uma opção pré-selecionada, adicione o atributo selected à opção
+
+	EX: <option value="fiat" selected>
+			Fiat
+		</option>
+
+<textarea> - Define um campo de entrada multilinha(uma área de texto)
+
+	EX: <textarea name="message" rows="10" cols="30">
+			The cat was playing in the garden.
+		</textarea>
+
+<button> - Define um botão clicável
+
+	EX: <button type="button" onclick="alert('Hello World!')">
+			Click Me!
+		</button>
+
+<fieldset> - É usado para agrupar dados relacionados em um formulário.
+
+<legend> - Define uma legenda para o <fieldset> elemento.
+
+	EX: <form action="/action_page.php">
+			<fieldset>
+				<legend>Personalia:</legend>
+				<label for="fname">First name:</label><br>
+				<input type="text" id="fname" name="fname" value="John"><br>
+				<label for="lname">Last name:</label><br>
+				<input type="text" id="lname" name="lname" value="Doe"><br><br>
+				<input type="submit" value="Submit">
+			</fieldset>
+		</form>
+
+<datalist> - Especifica uma lista de opções predefinidas para um elemento <input>. Os usuários verão uma lista suspensa de opções predefinidas à medida que inserem os dados. O listatributo do elemento <input> deve referir-se ao atributo id do elemento <datalist>.
+
+<output> - Representa o resultado de um cálculo (como aquele realizado por um script).
+
+	EX: <form action="/action_page.php"
+			oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+			0
+			<input type="range"  id="a" name="a" value="50">
+			100 +
+			<input type="number" id="b" name="b" value="50">
+			=
+			<output name="x" for="a b"></output>
+			<br><br>
+			<input type="submit">
+		</form>
 -->
